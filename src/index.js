@@ -1,14 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-function Greeting() {
+function Booklist() {
 	return (
-		<>		
-			{/* these are react fragments , <></> */}
-			<GreetingType />
-			<Person />
-		</>
+		<section>
+			<Book/> 
+		</section>
 	)
 }
 
-ReactDom.render(<Greeting />, document.getElementById('root'))
+const Book = () => {
+	return (
+		<article>
+			This will contain three component 
+				<ul>BookImg</ul>
+				<ul>BookName</ul>
+				<ul>BookAuthor</ul>
+		</article>
+	)
+}
+
+
+ReactDOM.render(<Booklist />, document.getElementById('root'))
