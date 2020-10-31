@@ -1,25 +1,27 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
+import './index.css' 
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Booklist() {
 	return (
-		<section>
-			<Book /> 
-			<br />
-			<Book />
+		<section className="container-fluid">
+			<div className="row mt-4">
+				<Book /> 
+				<Book />
+			</div>
 		</section>
 	)
 }
 
 const Book = () => {
 	return (
-		<article>
+		<div className="col-sm-12 col-md-3 col-lg-4 text-center book">
 			<BookImg></BookImg>
 			<BookName></BookName>
 			<BookAuthor></BookAuthor>
 			<BookPriceINR></BookPriceINR>	
-		</article>
+		</div>
 	)
 }
 
@@ -31,7 +33,7 @@ const BookName = () => {
 
 const BookAuthor = () => {
 	return (
-		<h3>Gita V.reddy</h3>
+		<h3 className="bookauthor">Gita V.reddy</h3>
 	)
 }
 
@@ -42,7 +44,7 @@ const BookPriceINR = () => {
 }
 
 const BookImg = () => {
-	return <img src="https://images-eu.ssl-images-amazon.com/images/I/71NiPFoJx1L._UX300__PJku-sticker-v7,TopRight,0,-50__BG0,0,0,0_FMpng_AC_UL200_SR200,200_.jpg" alt=""/>
+	return <img src="https://images-eu.ssl-images-amazon.com/images/I/71NiPFoJx1L._UX300__PJku-sticker-v7,TopRight,0,-50__BG0,0,0,0_FMpng_AC_UL200_SR200,200_.jpg" alt="" width="400px"/>
 }
 
 
