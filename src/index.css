@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: #ebdfdf;
+    color: #292020;
+}
+
+.bookauthor{
+    color: #617d98;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+.book{
+    background: #fff;
+    border-radius: 1rem;
+    padding: 0.2rem 0.2rem;
+    margin: 1.3rem;
+}
